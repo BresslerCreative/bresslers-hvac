@@ -1,16 +1,16 @@
-/* Basic Reset */
+/* ==================================================== */
+/* basic reset */
+/* ==================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
   
-/* General Styles 
-
----------------------------------------------------------------------- 
-----------------------------------------------------------------------
-
-*/
+/* ==================================================== */
+/* general styles) */
+/* ==================================================== */
 
 /*   
 Brand colors: 
@@ -34,31 +34,44 @@ body {
     margin: 0;
 }
 
-/* Header 
+h1 {
+    font-size: 64px; 
+    padding: 16px 0;
+} 
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+h2 {
+    font-size: 32px; 
+    padding: 16px 0;
+}
 
-*/
+p {
+    font-size: 16px; 
+    padding: 4px 0;
+}
+
+/* ==================================================== */
+/* universal components*/
+/* ==================================================== */
+
+/* global header --------------------------------------------------------- */
 
 header {
     background-color: #ffffff;
-    color: #F26838;
-    padding: 20px;
+    border-bottom: 2px solid #F26838;
+    padding: 24px;
+    height: 160px;
     text-align: center;
-    border-bottom: 2px solid #0D3425;
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
-#logo-container {
-    background-color: #e8e3e1;
-    width: 30%;
-    max-width: 300px;
+#logo-container img {
+    height: 48px;
 }
 
 .header-logo {
@@ -69,41 +82,141 @@ header {
 }
 
 #cta-btn {
-    background-color: #F26838; 
-    color: #FFFFFF;
-    display: inline-block;      /* Allows setting padding and margins */
-    padding: 12px 24px;         /* Adds space inside the button */
-    text-decoration: none;      /* Removes the default underline */
-    border: none;               /* Ensures no default border is visible */
-    border-radius: 8px;         /* Adds rounded corners */
-    cursor: pointer;            /* Changes mouse to a hand pointer */
-    font-size: 16px;            /* Sets text size */
+    background-color: #ffffff; 
+    box-shadow: inset 0 0 0 4px #165438;
+    color: #165438;
+    display: inline-block;   
+    padding: 12px 24px;       
+    text-decoration: none;  
+    border: none;  
+    border-radius: 8px;         
+    cursor: pointer;            
+    font-size: 16px;            
     font-weight: bold;
     transition: background-color 0.25s ease-in-out;
 } 
 
 #cta-btn:hover {
-    background-color: #165438;
-    box-shadow: inset 0 0 0 3px #F26838;
+    background-color: #0D3425;
+    box-shadow: inset 0 0 0 3px #0D3425;
+    color: #B1DCC2;
+}
+
+#sticky-contact {
+    background-color: #F26838;
+    color: #FFE8CC;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #0D3425;
+    position: sticky;
+    justify-content: space-between;
+    top: 160px;
+    z-index: 9;
+}
+
+#stickycontact-lrg {
+    display: none; /* hidden at mobile screen sizes*/
+}
+
+.contact-name {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
-/* Main Content 
+/* global footer --------------------------------------------------------- */
 
-----------------------------------------------------------------------
----------------------------------------------------------------------- 
 
-*/
+footer {
+    background-color: #165438;
+    padding: 0;
+    font-size: 8px;
+}
+
+#businessinfocontainer {
+    padding: 0px;
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#businessinfo {
+    background-color: #f4f4f4;
+    padding: 32px;
+    flex: 40%;
+}
+
+.business-txt-bold {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 0 4px 0;
+}
+
+.business-txt-section {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 16px 0 4px 0;
+}
+
+#serviceareamap {
+    background-color: #165438;
+    background-image: url(../assets/servicemap.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%; 
+    background: cover;
+    width: 100%;
+    height: 600px;
+    flex: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+
+.servicearea-txt {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F26838;
+}
+
+#friendly {
+    background-color: #165438;
+    margin: 0;
+    padding: 0;
+} 
+
+.friendly-img {
+    width: 100%; 
+    height: auto; 
+    max-height: 600px;
+    object-fit: contain; 
+    vertical-align: bottom;
+}
+
+#footer-details {
+    background-color: #165438;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    padding: 40px 0;
+    font-size: 8px;
+}
+
+
+/* ==================================================== */
+/* index.html page */
+/* ==================================================== */
 
 div {
     width: 100%;
 } 
 
-/* splash --------------------------------------------------------- */
+/* splash section --------------------------------------------------------- */
 
 #splash {
-    background-color: #bbbbbb
-    ;
+    background-color: #bbbbbb;
 } 
 
 .splash-img {
@@ -169,30 +282,19 @@ to {
 
 /* highlights --------------------------------------------------------- */
 
-#highlights {
-    max-width: 100%;
-    padding: 40px 8px;
-    background-color: #165438;
+#highlight-container {
     display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+    padding: 32px 16px 48px 16px;
+}
+  
+.highlight {
+    flex: 1 1 320px; 
+    background-color: #0D3425;
+    padding: 16px;
+    border-radius: 8px;
 } 
-
-.highlight-one {
-    background-color: #0D3425;
-    padding: 20px;
-    margin: 0px 8px;
-}
-
-.highlight-two {
-    background-color: #0D3425;
-    padding: 20px;
-    margin: 0px 8px;
-}
-
-.highlight-three {
-    background-color: #0D3425;
-    padding: 20px;
-    margin: 0px 8px;
-}
 
 .highlight-txt {
     color: #B1DCC2;
@@ -212,7 +314,7 @@ to {
 /* services --------------------------------------------------------- */
 
 #services {
-    padding: 20px 40px 100px;
+    padding: 16px 32px 100px;
     background-color: #0D3425;
     background-image: url("../assets/bhvac-pattern-01.png"); /* The image used */
     background-repeat: no-repeat;
@@ -225,7 +327,8 @@ to {
 }
 
 .services-txt {
-    color: #B1DCC2;
+    color: #B1DCC2; 
+    max-width: 780px;
 }
 
 .servicebold {
@@ -242,7 +345,8 @@ to {
 
 #servicescontainer {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    width: 100%;
     margin: 16px 0;
 }
 
@@ -254,50 +358,42 @@ to {
     margin: 0 32px 0 0;
 }
 
-#servicesdiv3 {
-    margin: 0 32px 0 0;
-}
-
 /* reviews --------------------------------------------------------- */
 
-#reviews {
-    padding: 20px 40px 100px;
-    background-color: #F26838;
-}
-
-#reviewscontainer {
-    margin: 16px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#flexspacer16 {
-    width: 16px;
-    height: 16px;
-}
-
-#reviewdiv1 {
+#customer-reviews {
     background-color: #FFE8CC;
-    padding: 16px;
-    border-radius: 16px;
+    padding: 16px 32px 40px;
 }
 
-#reviewdiv2 {
+#revdemo-container {
     background-color: #FFE8CC;
+    column-count: 1; /* For mobile, show 1 column */
+    column-gap: 16px; 
     padding: 16px;
-    border-radius: 16px;
+}
+  
+.revdemo-item {
+    break-inside: avoid-column; /* Crucial: Prevents items from being cut off across a column break */
+    display: block; /* Ensures the item takes up its full content width within the column */
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
 }
 
-#reviewdiv3 {
-    background-color: #FFE8CC;
-    padding: 16px;
-    border-radius: 16px;
+#revdemo-spacer {
+    height: 84px;
 }
 
-.review {
+.customerrev-txt {
+    max-width: 780px;
+}
+
+.review-txt {
     color: #0D3425;
 }
-.customername {
+
+.customername-txt {
     color: #F26838;
     padding: 16px 0 0 0;
 }
@@ -305,7 +401,7 @@ to {
 /* about --------------------------------------------------------- */
 
 #about {
-    padding: 20px 40px 100px;
+    padding: 16px 32px 100px;
     background-image: url("../assets/bhvac-about.png"); /* The image used */
     background-color: #ffffff; /* Used if the image is unavailable */
     background-repeat: no-repeat;
@@ -313,23 +409,20 @@ to {
     background-position: top right;
 } 
 
-#aboutcopy {
-    max-width: 800px;
+#aboutus-txt {
+    max-width: 715px;
 }
 
+/* ==================================================== */
+/* Service request form page */
+/* ==================================================== */
 
-/* Service request form page 
-
-----------------------------------------------------------------------
----------------------------------------------------------------------- 
-
-*/
-
-/* form field --------------------------------------------------------- */
+/* form field  section --------------------------------------------------------- */
 
 #servicerequestcontainer {
-    padding: 20px 16px 100px;
+    padding: 16px 32px 100px;
     background-color: #ffffff;
+
 }
 
 #servicerequestform {
@@ -339,10 +432,10 @@ to {
 
 #formheaderimg {
     background-color: #B1DCC2;
-    background-image: url(../assets/bhvac-form-banners-01.png);
+    background-image: url(../assets/form-banners/bhvac-form-banners-04.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%; 
+    background-size: auto 120%; 
     width: 100%;
     height: 200px;
     border-radius: 16px 16px 0 0;
@@ -364,99 +457,72 @@ to {
     background-color: #bbbbbb;
     flex: 40%;
 }
-
-/* business info --------------------------------------------------------- */
-
-#businessinfocontainer {
-    padding: 0px;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#businessinfo {
-    background-color: #f4f4f4;
-    padding: 48px;
-    flex: 40%;
-}
-
-.business-txt-bold {
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0 0 8px 0;
-}
-
-.business-txt-section {
-    font-weight: bold;
-    font-size: 12px;
-    padding: 16px 0 4px 0;
-}
-
-#serviceareamap {
-    background-color: #165438;
-    background-image: url(../assets/servicemap.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 140%; 
-    background: cover;
-    width: 100%;
-    height: 600px;
-    flex: 60%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    text-align: center;
-
-}
-
-.servicearea-txt {
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    color: #F26838;
-}
-
-
-/* Universal footer 
-
-----------------------------------------------------------------------
----------------------------------------------------------------------- 
-
-*/
-
-/* friendly footer image --------------------------------------------------------- */
-
-#friendly {
-    background-color: #165438;
-    margin: 0;
-    padding: 0;
-} 
-
-.friendly-img {
-    width: 100%; 
-    height: auto; 
-    max-height: 600px;
-    object-fit: contain; 
-    vertical-align: bottom;
-}
-
-
-/* footer copy --------------------------------------------------------- */
-
-footer {
-    background-color: #165438;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    font-size: 0.9em;
-}
   
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* ==================================================== */
+/* Responsive Styles / Breakpoints (Think Mobile-First) */
+/* ==================================================== */
+
+/* lrg size layout - larger than mobile */
+@media (min-width: 728px) {
+
+    header {
+        background-color: #ffffff;
+        color: #F26838;
+        border-bottom: 2px solid #F26838;
+        padding: 20px;
+        height: 102px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #sticky-contact {
+        display: none;
+    }
+    
+    #stickycontact-lrg {
+        display: block;
+        background-color: #F26838;
+        color: #FFE8CC;
+        height: 40px;
+        text-align: center;
+        border-bottom: 2px solid #0D3425;
+        position: sticky;
+        justify-content: space-between;
+        top: 102px;
+        z-index: 1001;
+    }
+    
+    .contact-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #servicescontainer {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 16px 0;
+    }
+
+    #revdemo-container {
+        background-color: #FFE8CC;
+        column-count: 3; /* For desktop, show 3 columns */
+        column-gap: 16px; 
+        padding: 16px;
+    }
+    
+}
+
+/* business details break point */
 @media (max-width: 1000px) {
     #servicerequestform, #formdetails, #businessinfo, #serviceareamap {
       flex: 100%;
     }
-
 }
