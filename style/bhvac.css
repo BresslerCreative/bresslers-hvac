@@ -71,7 +71,8 @@ header {
 }
 
 #logo-container img {
-    height: 48px;
+    height: 48px; 
+    max-width: 300px; 
 }
 
 .header-logo {
