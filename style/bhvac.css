@@ -403,31 +403,31 @@ to {
 
 #orange-stripe {
     background-color: #F26838;
-    height: 4px;
+    height: 8px;
     width: 100%;
 }
 
 #white-stripe {
     background-color: #ffffff;
-    height: 4px;
-    width: 100%;
-}
-
-#pinegreen-stripe {
-    background-color: #165438;
-    height: 4px;
-    width: 100%;
-}
-
-#forrestshadow-stripe {
-    background-color: #0D3425;
-    height: 4px;
+    height: 8px;
     width: 100%;
 }
 
 #mintmoss-stripe {
     background-color: #B1DCC2;
-    height: 4px;
+    height: 8px;
+    width: 100%;
+}
+
+#pinegreen-stripe {
+    background-color: #165438;
+    height: 8px;
+    width: 100%;
+}
+
+#forrestshadow-stripe {
+    background-color: #0D3425;
+    height: 8px;
     width: 100%;
 }
 
