@@ -397,6 +397,38 @@ to {
 .customername-txt {
     color: #F26838;
     padding: 16px 0 0 0;
+} 
+
+/* decorative stripes --------------------------------------------------------- */
+
+#orange-stripe {
+    background-color: #F26838;
+    height: 16px;
+    width: 100%;
+}
+
+#white-stripe {
+    background-color: #ffffff;
+    height: 16px;
+    width: 100%;
+}
+
+#pinegreen-stripe {
+    background-color: #165438;
+    height: 16px;
+    width: 100%;
+}
+
+#forrestshadow-stripe {
+    background-color: #0D3425;
+    height: 16px;
+    width: 100%;
+}
+
+#mintmoss-stripe {
+    background-color: #B1DCC2;
+    height: 16px;
+    width: 100%;
 }
 
 /* about --------------------------------------------------------- */
