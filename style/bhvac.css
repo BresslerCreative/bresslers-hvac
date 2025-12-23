@@ -476,8 +476,10 @@ to {
 
 .iframe-container {
     width: 100%;
-    height: 2000px; /* Adjust this height as needed to show the whole form */
-    overflow: hidden;
+    height: 1800px; /* Adjust this height as needed to show the whole form */
+    overflow-y: auto !important;
+    overflow-x: hidden;  
+    -webkit-overflow-scrolling: touch; 
     border-radius: 8px;
 }
 
