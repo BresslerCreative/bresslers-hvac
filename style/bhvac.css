@@ -469,6 +469,123 @@ to {
     max-width: 715px;
 }
 
+/* finan section --------------------------------------------------------- */
+
+#finan {
+    display: flex;
+    flex-direction: column;
+}
+
+#finan-details {
+    background-color: #0D3425;
+    padding: 32px;
+}
+
+#finan-details-txt-headline {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+#finan-details-txt-headline-highlight {
+    color: #F26838;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+#finan-details-txt-fineprint {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+
+#finan-img-container {
+    background-color: #0D3425;
+    width: 100%;
+}
+
+.finan-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#finan-info {
+    background-color: #0D3425;
+    padding: 32px;
+    max-width: 380px;
+}
+
+#finan-info-txt-body {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#finan-info-txt-fineprint {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+
+@media (min-width: 600px) {
+
+    #finan-details-txt-headline, 
+    #finan-details-txt-headline-highlight {
+        font-size: 80px;
+        line-height: 96px;
+    }
+
+    #finan-img-container {
+        position: relative;
+    }
+
+    .finan-img {
+        max-height: 800px;
+    }
+
+    #finan-info {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 460px;
+        border-radius: 16px 0 0 16px;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    #finan {
+        flex-direction: row;
+    }
+
+    #finan-details {
+        height: 600px;
+        flex: 40%;
+    }
+
+    #finan-img-container {
+        position: relative;
+        display: flex;
+        flex: 60%;
+    }
+
+    #finan-details-txt-headline, 
+    #finan-details-txt-headline-highlight {
+        font-size: 48px;
+        line-height: 64px;
+    }
+}
+
 /* ==================================================== */
 /* Service request form page */
 /* ==================================================== */
