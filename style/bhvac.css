@@ -103,6 +103,29 @@ header {
     color: #B1DCC2;
 }
 
+#finan-btn {
+    background-color: #0D3425; 
+    box-shadow: inset 0 0 0 3px #ffffff;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    padding: 16px 24px;
+    max-width: 300px;    
+    text-decoration: none;  
+    border: none;  
+    border-radius: 8px;         
+    cursor: pointer;            
+    font-size: 16px;            
+    font-weight: bold;
+} 
+
+#finan-btn:hover {
+    background-color: #F26838;
+    box-shadow: inset 0 0 0 3px #F26838;
+    color: #0D3425;
+}
+
 #sticky-contact {
     background-color: #F26838;
     color: #FFE8CC;
